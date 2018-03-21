@@ -1,7 +1,8 @@
-#include "stdafx.h"
+
 #include "Enemigo.h"
+#include <iostream>
 
-
+static bool hit = false;
 
 using namespace sf;
 Enemigo::Enemigo()
@@ -24,6 +25,44 @@ Enemigo::~Enemigo(){
 bool isBeingHit(sf::Vector2f positionReader, sf::Vector2i mousePosition) {
 	if (mousePosition.x >= (positionReader.x - 20) && mousePosition.x <= (positionReader.x + 100) && mousePosition.y >= (positionReader.y - 20) && mousePosition.y <= (positionReader.y + 50))
 		return true;
+	return false;
+}
+
+bool Enemigo::checkShotCircle(sf::RenderWindow &window, sf::CircleShape &shape) {
+	auto posicion = shape.getPosition();
+	auto mousePosicion = Mouse::getPosition();
+	auto newX = rand() % ScreenWidth + 1;
+	auto newY = rand() % ScreenHeight + 1;
+
+	if (mousePosicion.x >= (posicion.x - 260) && mousePosicion.x <= (posicion.x + 260) && mousePosicion.y >= (posicion.y - 260) && mousePosicion.y <= (posicion.y + 260) && hit == false) {
+		shape.setFillColor(Color::Red);
+
+		/*health -= 10;
+		if (health == 0) {
+			shape.setPosition(newX, newY);
+			health = 40;
+			respawns++;
+		}
+		if (respawns == 4) {
+			std::cout << "DEAD" << std::endl;
+			isDead = true;
+		}
+
+		alreadyHit = true;*/
+
+		/*std::cout << posicion.x << std::endl;
+		std::cout << mousePosicion.x <<  std::endl;
+		std::cout << "Hit" << std::endl;*/
+
+		return true;
+	}
+	//std::cout << posicion.x << std::endl;
+	//std::cout << posicion.x << std::endl;
+	//std::cout << mousePosicion.x << std::endl;
+
+	//std::cout << posicion.y << std::endl;
+	//std::cout << mousePosicion.y << std::endl;
+	//std::cout << "Hit" << std::endl;
 	return false;
 }
 
@@ -128,6 +167,8 @@ void Enemigo::move(sf::RectangleShape *&rectangle) {
 
 	rectangle->setPosition(newX, newY);
 }
+
+
 
 void Enemigo::restart()
 {

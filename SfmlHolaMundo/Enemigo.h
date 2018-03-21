@@ -22,6 +22,8 @@ public:
 	bool checkShot(sf::RenderWindow &, sf::CircleShape&, sf::RectangleShape *&);
 	void checkMouseHover(sf::RectangleShape *&, sf::RenderWindow &, sf::CircleShape &);
 	void move(sf::RectangleShape *&);
+	//void crearPelota();
+	static bool checkShotCircle(sf::RenderWindow &, sf::CircleShape &);
 	void restart();
 
 	~Enemigo();
