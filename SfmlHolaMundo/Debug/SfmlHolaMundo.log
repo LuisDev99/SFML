@@ -1,1 +1,7 @@
-﻿
+﻿  SfmlHolaMundo.cpp
+c:\users\dell\documents\visual studio 2017\projects\avances juego lab p3\sfmlholamundo #2 enemies respawn and have health\sfmlholamundo\sfmlholamundo.cpp(70): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\dell\documents\visual studio 2017\projects\avances juego lab p3\sfmlholamundo #2 enemies respawn and have health\sfmlholamundo\sfmlholamundo.cpp(148): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\dell\documents\visual studio 2017\projects\avances juego lab p3\sfmlholamundo #2 enemies respawn and have health\sfmlholamundo\sfmlholamundo.cpp(151): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\dell\documents\visual studio 2017\projects\avances juego lab p3\sfmlholamundo #2 enemies respawn and have health\sfmlholamundo\sfmlholamundo.cpp(298): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\dell\documents\visual studio 2017\projects\avances juego lab p3\sfmlholamundo #2 enemies respawn and have health\sfmlholamundo\sfmlholamundo.cpp(183): warning C4101: 'event': unreferenced local variable
+  SfmlHolaMundo.vcxproj -> C:\Users\dell\Documents\Visual Studio 2017\Projects\Avances Juego Lab P3\SfmlHolaMundo #2 Enemies respawn and have health\Debug\SfmlHolaMundo.exe

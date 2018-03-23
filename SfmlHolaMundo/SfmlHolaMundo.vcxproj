@@ -154,9 +154,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Enemigo.h" />
+    <ClInclude Include="Menu.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Enemigo.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="SfmlHolaMundo.cpp" />
   </ItemGroup>
   <ItemGroup>
